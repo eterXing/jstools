@@ -1,0 +1,40 @@
+{
+  "name": "@eterxing/jstools",
+  "description": "A diverse JS tool library",
+  "version": "0.0.3",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "types": "./index.d.ts",
+  "license": "MIT",
+  "author": "eterxing",
+  "exports": {
+    "types": "./index.d.ts",
+    "import": "./dist/index.js",
+    "require": "./dist/index.umd.cjs"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "pv": "npm run build && npm publish",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^5.61.0",
+    "eslint": "^8.44.0",
+    "eslint-config-ali": "^14.0.2",
+    "prettier": "^3.0.0",
+    "typescript": "^5.1.3",
+    "vite": "^4.3.9",
+    "vitepress": "*"
+  }
+}
