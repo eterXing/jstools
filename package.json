@@ -26,7 +26,14 @@
     "pv": "npm run build && npm publish",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+    "docs:serve": "vitepress serve docs",
+    "docs:deploy": "sh deploy.sh"
+  },
+  "homepage": "https://github.com/eterXing/jstools",
+  "bugs": "https://github.com/eterXing/jstools/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eterXing/jstools.git"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^5.61.0",

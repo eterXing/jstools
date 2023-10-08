@@ -18,3 +18,7 @@ npm install @eterxing/jstools
 ```sh
 yarn @eterxing/jstools
 ```
+
+---
+## 文档
+- [GitHub 使用文档地址：https://eterxing.github.io/jstools/](https://eterxing.github.io/jstools/)

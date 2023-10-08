@@ -2,6 +2,8 @@ import { defineConfig } from "vitepress"
 import sidebar from "./sidebar"
 
 export default defineConfig({
+    // base: "/jstools/",
+    base: "/",
     title: "jsTools",
     titleTemplate: "javaScript工具库",
     description: "javaScript工具库",
