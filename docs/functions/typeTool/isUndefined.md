@@ -1,0 +1,42 @@
+---
+title: 类型判断
+titleTemplate: isUndefined
+---
+
+# 【{{ $frontmatter.title }} —— {{$frontmatter.titleTemplate}}】
+
+**功能：** 判断数据是否是一个未定义(`undefined`)类型的数据，如果是则返回`true`,否则返回`false`。
+
+## 函数引入
+
+```ts 
+import { isUndefined } from '@eterxing/jstools'
+```
+## 函数声明
+
+```ts 
+declare const isUndefined: (value: unknown) => boolean
+```
+
+## 使用示例
+
+```ts 
+const res1:boolean = isUndefined(5) // false
+const res2:boolean = isUndefined(null) // false
+const res3:boolean = isUndefined('') // false
+const res4:boolean = isUndefined(undefined) // true
+```
+::: tip
+`isUndefined` 方法采用的是`typeof`关键字实现的,所以对于`null`、`空字符串('')`得到的结果是`false`
+:::
+
+## 参数不能为空
+
+::: danger ERROR
+该方法的参数不能为空,否则将抛出错误
+
+```ts
+Uncaught Error: isXXXX方法的参数不能为空！
+```
+:::
+

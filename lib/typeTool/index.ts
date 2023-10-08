@@ -34,4 +34,21 @@ function isType(value: unknown, type: returnTypeStr): boolean {
     }
 }
 
-export { isBoolean, isNumber, isString, isUndefined, isSymbol, isNull, isArray, isDate, isFunction, isObject, isType }
+function isNaN(value: unknown) {
+    return Number.isNaN(value)
+}
+
+export {
+    isBoolean,
+    isNumber,
+    isString,
+    isUndefined,
+    isSymbol,
+    isNull,
+    isArray,
+    isDate,
+    isFunction,
+    isObject,
+    isNaN,
+    isType,
+}

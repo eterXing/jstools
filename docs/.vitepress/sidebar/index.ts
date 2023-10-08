@@ -12,6 +12,7 @@ function siderbarFunction(): DefaultTheme.SidebarItem[] {
         array_tool: "/functions/arrayTool/",
     }
     const joinTypeUrl = joinUrl(baseUrl.type_tool)
+    const joinStringUrl = joinUrl(baseUrl.string_tool)
 
     const rtnSider: DefaultTheme.SidebarItem[] = [
         {
@@ -22,28 +23,27 @@ function siderbarFunction(): DefaultTheme.SidebarItem[] {
             text: "数据类型篇",
             collapsed: true, // 初始加载页面时关闭
             items: [
-                { text: "函数列表概览", link: joinTypeUrl() },
+                { text: "概览", link: joinTypeUrl() },
                 { text: "isBoolean", link: joinTypeUrl("isBoolean") },
-                { text: "isString", link: joinTypeUrl("isString") },
                 { text: "isNumber", link: joinTypeUrl("isNumber") },
-                { text: "isBigint", link: joinTypeUrl("isBigint") },
-                { text: "isSymbol", link: joinTypeUrl("isSymbol") },
+                { text: "isString", link: joinTypeUrl("isString") },
                 { text: "isUndefined", link: joinTypeUrl("isUndefined") },
-                { text: "isFloat", link: joinTypeUrl("isFloat") },
-                { text: "isInt", link: joinTypeUrl("isInt") },
+                { text: "isSymbol", link: joinTypeUrl("isSymbol") },
                 { text: "isNaN", link: joinTypeUrl("isNaN") },
-                { text: "isFinite", link: joinTypeUrl("isFinite") },
-                { text: "isInfinite", link: joinTypeUrl("isInfinite") },
                 { text: "isNull", link: joinTypeUrl("isNull") },
                 { text: "isArray", link: joinTypeUrl("isArray") },
-                { text: "isObject", link: joinTypeUrl("isObject") },
                 { text: "isDate", link: joinTypeUrl("isDate") },
                 { text: "isFunction", link: joinTypeUrl("isFunction") },
-                { text: "getType", link: joinTypeUrl("getType") },
-                { text: "getArrayAllType", link: joinTypeUrl("getArrayAllType") },
-                { text: "getArrayTypeDetail", link: joinTypeUrl("getArrayTypeDetail") },
-                { text: "getObjectAllType", link: joinTypeUrl("getObjectAllType") },
-                { text: "getObjectTypeDetail", link: joinTypeUrl("getObjectTypeDetail") },
+                { text: "isObject", link: joinTypeUrl("isObject") },
+                { text: "isType", link: joinTypeUrl("isType") },
+            ],
+        },
+        {
+            text: "字符串篇",
+            collapsed: true, // 初始加载页面时关闭
+            items: [
+                { text: "概览", link: joinStringUrl() },
+                { text: "DTMobile", link: joinStringUrl("DTMobile") },
             ],
         },
     ]

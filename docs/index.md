@@ -11,7 +11,7 @@ hero:
       link: /guide/
     - theme: alt
       text: GitHub源码地址
-      link: https://github.com/geniusmanyxh/tj-jstools
+      link: https://github.com/eterXing/jstools
 features:
   - icon: ⚡️
     title: 方便
